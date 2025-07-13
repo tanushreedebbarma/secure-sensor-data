@@ -90,5 +90,5 @@ for i in range(5):
     print("Decrypted AES key:", base64.b64encode(decrypted_aes_key).decode("utf-8"))
     print("Decrypted Message:", decrypted_message)
     
-    # Add a small delay between readings
+    # A small delay between readings
     time.sleep(1)
