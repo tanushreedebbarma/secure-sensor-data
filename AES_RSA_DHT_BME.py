@@ -66,7 +66,6 @@ for i in range(5):
         "DHT11 => Temp: {0:0.1f}C, Humidity: {1:0.1f}% | "
         "BME280 => Temp: {2:0.2f}C, Humidity: {3:0.2f}%, Pressure: {4:0.2f} hPa"
     ).format(temperature, humidity, bme280_temp, bme280_humidity, bme280_pressure)
-    
     print(message)
     
     # Encrypt message using AES
@@ -85,7 +84,6 @@ for i in range(5):
 
     # Decrypt message using decrypted AES key
     decrypted_message = aes_decrypt(encrypted_message, decrypted_aes_key)
-
     print("\n--- Decrypted Output ---")
     print("Decrypted AES key:", base64.b64encode(decrypted_aes_key).decode("utf-8"))
     print("Decrypted Message:", decrypted_message)
